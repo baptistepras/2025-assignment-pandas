@@ -117,7 +117,12 @@ def plot_referendum_map(referendum_result_by_regions):
         gdf_regions['Choice A'] /
         (gdf_regions['Choice A'] + gdf_regions['Choice B'])
     )
-    gdf_regions.plot(column='ratio', legend=True, cmap='Blues', edgecolor='black')
+    gdf_regions.plot(
+        column='ratio', 
+        legend=True, 
+        cmap='Blues', 
+        edgecolor='black'
+    )
 
     return gdf_regions
 
